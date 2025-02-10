@@ -19,7 +19,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className='container'>
       <h1>Login</h1>
       <input
       type='text'
