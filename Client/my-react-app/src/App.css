@@ -5,15 +5,22 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding: 0;
   margin: 0;
 }
 
 .container{
   background-color: #fff;
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 300px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.gallery{
+  padding: 20px;
   text-align: center;
 }
 
@@ -49,4 +56,41 @@ button:hover{
 p{
   margin-top: 15px;
   color: #333;
+}
+
+.wallpapers{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.wallpaper-item{
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 200px;
+}
+
+.wallpaper-item img{
+  width: 100%;
+  height: 150%;
+  object-fit: cover;
+}
+
+.wallpaper-item button{
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 0 0 8px 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.wallpaper-item button:hover{
+  background-color: #218838;
 }

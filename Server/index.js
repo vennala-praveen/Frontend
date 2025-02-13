@@ -1,6 +1,7 @@
 const express = require("express");
 const mysql = require("mysql2");
 const cors = require("cors");
+const path = require("path");
 
 const app = express();
 app.use(cors());
@@ -37,6 +38,21 @@ app.post("/login",(req, res)=>{
         }
     });
 });
+
+
+app.get("/wallpapers",(req,res)=>{
+    const wallpapers =[
+        {id:1, url:"/wallpapers/wallpaper1.jpg",name:"Wallpaper1"},
+        {id:2, url:"/wallpapers/wallpaper2.jpg",name:"Wallpaper2"},
+        {id:3, url:"/wallpapers/wallpaper3.jpg",name:"Wallpaper3"},
+        {id:4, url:"/wallpapers/wallpaper4.jpg",name:"Wallpaper4"},
+        {id:5, url:"/wallpapers/wallpape5.jpg",name:"Wallpaper5"},
+        {id:6, url:"/wallpapers/wallpaper6.jpg",name:"Wallpaper6"},
+    ];
+    res.json(wallpapers);
+});
+
+app.use("/wallpapers", express.static(path.join(__dirname, "public/wallpapers")));
 
 
 const PORT = 5000;
