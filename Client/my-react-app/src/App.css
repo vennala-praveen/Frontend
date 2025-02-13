@@ -81,7 +81,7 @@ p{
 
 .wallpaper-item img{
   width: 100%;
-  height: 150%;
+  /* height: 150%; */
   object-fit: cover;
 }
 
@@ -98,4 +98,13 @@ p{
 
 .wallpaper-item button:hover{
   background-color: #218838;
+}
+
+@media(max-width:768px){
+  .wallpaper-item{
+    width: 150px;
+  }
+  .wallpaper-item img{
+    height: 100px;
+  }
 }
