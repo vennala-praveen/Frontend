@@ -46,8 +46,6 @@ app.get("/wallpapers",(req,res)=>{
         {id:2, url:"/wallpapers/wallpaper2.jpg",name:"Wallpaper2"},
         {id:3, url:"/wallpapers/wallpaper3.jpg",name:"Wallpaper3"},
         {id:4, url:"/wallpapers/wallpaper4.jpg",name:"Wallpaper4"},
-        {id:5, url:"/wallpapers/wallpape5.jpg",name:"Wallpaper5"},
-        {id:6, url:"/wallpapers/wallpaper6.jpg",name:"Wallpaper6"},
     ];
     res.json(wallpapers);
 });

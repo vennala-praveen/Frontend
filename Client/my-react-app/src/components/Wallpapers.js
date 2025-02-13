@@ -22,7 +22,7 @@ const Wallpaper = () =>{
 
     return(
         <div className="gallery">
-            <h1>Anime Wallpapers</h1>
+            <h1 className="get">Anime Wallpapers</h1>
             <div className="wallpapers">
                 {wallpaper.map((wallpaper)=>(
                     <div key={wallpaper.id} className="wallpaper-item">
